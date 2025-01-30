@@ -1,0 +1,9 @@
+1. Hypertext Markup Language (HTML) is the standard language used to create and design web pages. It creates the structure and layout of web pages (headings, paragraphs, images, links, forms, etc.) conveying meaning and providing functionality to the user. 
+
+2. www.fordham.edu opens up with newspaper like blocks on the right and left along with a large landscape image of NYC. We see the title Fordham University in the tab along with a Fordham logo icon. There is a navigation bar with all relevant pages to someone visiting a university website. The newspaper like blocks showcase news regarding Fordham University. Hovering above the navigation bar shows subpages that are relevant to the option chosen (e.g. Academics (heading) -> Graduate Schools (bold) -> Arts and Sciences) allowing the user to navigate. 
+
+3. HTML elements are the building blocks of web pages, representing content such as headings, paragraphs, links, and images. They are collections of start and end tags with content inserted between them. Tags are basically containers that enclose content and are represented by < >, signifying the start and end of an element. Tags are closed by a forward slash </ >. Attributes provide information about elements, they have a name and value. An example of this is alt, which if used on an image element will show alternative text if the image cannot be viewed on the browser. 
+
+4. Semantic elements convey meaning by their element type, even if the element cannot be distinguished from other elements visually. Structural elements with meaning have an effect on the structure of a page but do not convey any meaning by their element type. 
+
+5. The action will be the URL and the method is the http verb by default. 
