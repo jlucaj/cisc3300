@@ -1,0 +1,9 @@
+1. The id attribute specifies a unique id for an HTML element. The class attribute is used to specify a class for an HTML element. Unlike the id attribute, multiple HTML elements can share the same class while the value of the id attribute must be unique within the HTML document. 
+
+2. Declarations and selectors. Declarations have a property and value, applying a visual effect. Selectors are used to select HTML elements you want to style. 
+
+3. Rules cascade based on precedence. First, anything with the important keyword. Second, whichever rule has the higher specificity. Third, the parent will take precedence over the child element. Last, the rule applied last will take precedence if the selector points to the same element with the same specificity. 
+
+4. Inline displays an element as an inline element where any height and width properties have no effect, this is the default display. Block displays an element as a block element, starting it on a new line taking up the whole width. Inline-block displays an element as an inline-level block container, the element is formatted as an inline element but you can apply height and width rules. 
+
+5. Every box has a border, the border separates the edge of one box from another. Margins sit outside the edge of the border where you can set the width of the margin to create gaps between the borders of adjacent boxes. Padding is the space between the border of a box and anything within it. This helps with content readability. 

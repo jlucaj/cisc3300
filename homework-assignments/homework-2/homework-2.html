@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title> JNutrition Store </title>
+<body>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Open Sans for main text */
+        body {
+            margin: 0; 
+            padding: 10px; 
+            font-family: 'Open Sans', sans-serif; 
+        }
+
+        /* Header styling */
+        .header { 
+            width: 100%; 
+            background-color: peachpuff; 
+            border: 1px solid black; 
+            text-align: center; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+        }
+
+        /* Logo styling */
+        .logo {
+            font-family: 'Great Vibes', Impact; 
+            color: darkblue;
+            font-size: 100px; 
+            margin: 10px 0; 
+        }
+
+        /* Navigation styling */
+        nav {
+            text-align: center; 
+            margin-top: 10px; 
+        }
+        
+        nav a {
+            color: darkblue;
+            font-size: 12px; 
+            margin: 0 10px; 
+            display: inline-block; 
+        }
+
+        /* Image styling */
+        img {
+            display: block;
+            margin: auto; 
+        }
+
+        /* Further styling for everything else */
+        h1, h2, p, form, fieldset, label {
+            margin: 10px 0; 
+            padding: 10px; 
+            text-align: center; 
+        }
+
+    </style>
+
+    <!-- header w/ nav -->
+    <div class="header">
+        <h1 class="logo"> JNutrition </h1>
+        <nav>
+            <a href="#"> Home </a>
+            <a href="#"> About </a>
+            <a href="#"> Shop by Product </a>
+            <a href="#"> Shop by Goal </a>
+        </nav>
+    </div>
+
+
+    <!-- main content -->
+    <p> JNutrition is a natural supplement store that sells items catered towards healthy living. </p>
+    <h2> JNutrition Safety Guarantee </h2>
+    <p> All supplements are third-party tested for safety. </p>
+    <img width="250" height="250" src="./images/suppClipArt.png" alt="clip art" />
+
+    <!-- contact form -->
+    <form>
+        <fieldset>
+            <label for="First Name"> Enter your first name: </label><br>
+            <input type="text" id="fname" name="First Name" required />
+
+            <br><label for="Last Name"> Enter your last name: </label><br>
+            <input type="text" id="lname" name="Last Name" required />
+
+            <br><label for="Email"> Enter your email: </label><br>
+            <input type="email" id="email" name="Email" required />
+            
+            <br><input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+
+</body>
+</html>
