@@ -1,0 +1,43 @@
+<!DOCTYPE HTML> 
+
+<html>
+    <head>
+        <title>Flex Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            .flex-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .flex-item {
+                width: 100px;
+                height: 100px;
+                margin: 10px; 
+                background-color: darkslategrey;
+            }
+
+            @media screen and (max-width: 500px) {
+                .flex-container {
+                    flex-direction: column;
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .flex-container {
+                    flex-direction: row;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex-container">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </div>
+    </body>
+</html>

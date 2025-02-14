@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Bootstrap Form Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                align-items: center;
+                margin: 20px; 
+            }
+            h1 {
+                font-weight: bold; 
+            }
+        </style>
+    </head>
+
+    <h1>Security Questions</h1>
+    <body class= "container mt-5">
+        <form>
+            <div class="mb-3">
+                <label for="security-1" class="form-label">What is your mother's maiden name?</label>
+                <input type="text" class="form-control" id="security-1" required>
+            </div>
+            <div class="mb-3">
+                <label for="security-2" class="form-label">What is your hometown city?</label>
+                <input type="text" class="form-control" id="security-2" required>
+            </div>
+            <div class="mb-3">
+                <label for="security-3" class="form-label">What is your favorite hobby?</label>
+                <input type="text" class="form-control" id="security-3" required>
+            </div>
+            <div class="mb-3">
+                <label for="security-4" class="form-label">What is your birth year?</label>
+                <input type="age" class="form-control" id="security-4" required>
+            </div>
+            <div class="mb-3">
+                <label for="security-5" class="form-label">What is your email?</label>
+                <input type="email" class="form-control" id="security-5" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>
+
+
