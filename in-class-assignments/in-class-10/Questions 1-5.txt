@@ -1,5 +1,5 @@
 1. DOM
-2.
-3.
-4.
+2. document.getElementById()
+3. Cross-site sculpting
+4. Actions
 5. Event listeners
