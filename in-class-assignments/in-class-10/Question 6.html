@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Question 6</title>
+    </head>
+
+    <body>
+        <div id="changeTextDiv">initial text</div>
+        <script>
+            document.getElementById("changeTextDiv").addEventListener("click", function () {
+                this.textContent = "added text!";
+                this.style.backgroundColor = "yellow";
+            }); 
+        </script>
+    </body>
+</html>
