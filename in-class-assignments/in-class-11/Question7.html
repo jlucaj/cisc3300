@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 7</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <button id="ajax-get">Click this</button>
+
+    <script>
+        $(document).ready(function () {
+            $('#ajax-get').on('click', function () {
+                $.ajax({
+                    url: 'Question7.php',  // Ensure this file exists on the server
+                    method: "GET",
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response);
+                    },
+                });
+            });
+        });
+    </script>
+</body>
+</html>
