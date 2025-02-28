@@ -1,0 +1,35 @@
+{
+    "countries": [
+        {
+            "id" : 1,
+            "name" : "United States of America",
+            "continent" : "North America"
+        },
+        {
+            "id" : 2, 
+            "name" : "People's Republic of China",
+            "continent" : "Asia"
+        },
+        {
+            "id" : 3, 
+            "name" : "Burkina Faso",
+            "continent" : "Africa"
+        },
+        {
+            "id" : 4, 
+            "name" : "Venezuela", 
+            "continent" : "South America"
+        },
+        {
+            "id" : 5,
+            "name" : "New Zealand", 
+            "continent" : "Oceania"
+        },
+        {
+            "id" : 6, 
+            "name" : "Montenegro",
+            "continent" : "Europe"
+        }
+    ]
+
+}

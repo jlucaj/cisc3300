@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 8</title>
+    </head>
+    <body>
+
+        <ul id="list">
+            <li>ball 1</li>
+            <li>ball 2</li>
+            <li>ball 3</li>
+        </ul>
+
+        <script>
+            const listItems = document.querySelectorAll('#list li');
+            const colors = ['red', 'green', 'blue'];
+
+            listItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    item.style.color = colors[index];
+                });
+            });
+        </script>
+
+    </body>
+</html>

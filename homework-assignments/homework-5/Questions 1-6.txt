@@ -1,0 +1,16 @@
+1. The Document Object Model (DOM) is an API for web documents. It represents the page so that programs can change the document struct, style, and content. Whenever a browser loads a page, it creates a model of that page which is known as a DOM tree. The DOM tree is stored in the browser's memory and consists of the following nodes: document, element, attribute, and text.  
+
+2. A Cross-Site Scripting (XSS) Attack is a malicious code injection that occurs when you add HTML to a page using innerHTML or several jQuery methods. If a user adds code to an input that is then generated as HTML, the code could potentially be run for different users. You can guard against XSS attacks by being careful with what content you treat as HTML. 
+
+3. An event in JavaScript are "things" that happen to HTML elements, which are create through interactions. Events trigger code we can react to. You can respond to the following events using code: UI, keyboard, mouse, focus, form, and mutation. 
+
+4. A DOM eventListener is used to listen for specific events, it works by attaching an event listener to an element, specifying the event type, and the function to run when that event is triggered. So the parameters are event type such as "click" and a call back function. 
+
+5. jQuery is a JavaScript library that makes it easier to use JS, it takes tasks that would take lots of code and wraps them into methods that can be called with one line. We use it to reduce programming time through the simplification of HTML, DOM manipulation, event handling, CSS animations, and Ajax. We load jQuery through a CDN (content delivery network) to use it. 
+
+6. Asynchronous JavaScript and XML (AJAX) allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means a web page can be updated without having to be refreshed. JavaScript Objection Notation (JSON) is a text-based data format following JS object syntax that uses human-readable text to store and transmit data objects consisting of attribute-value pairs and arrays (similar to dictionaries in Python). Hyper Text Transfer Protocol (HHTP) is a protocol for fetching resources such as HTML documents or JSON data. It is how we send and receive data across the internet. The following are HTTP request methods:
+GET - retrieve data
+POST - submits an entity to resource (creates new resource)
+PUT - replaces entity to resource (updates new resource) 
+PATCH - modify a resource
+DELETE - delete a resource

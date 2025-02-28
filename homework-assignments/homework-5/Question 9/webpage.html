@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jozef's Soda</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            body {
+                padding: 20px;
+            }
+
+            .button-container {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            .products-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .product {
+                background-color: white;
+                border: 1px solid black;
+                padding: 20px;
+                width: 200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="button-container">
+            <button id="loadProductsBtn">Load Products</button>
+        </div>
+
+        <div class="products-container" id="productsContainer"></div>
+
+        <script>
+            $(document).ready(function () {
+                $("#loadProductsBtn").click(function () {
+                    $.ajax({
+                        url: '/products',  
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function (response) {
+                            $("#productsContainer").empty();
+
+                            // Loop through the response array and display each product
+                            response.forEach(function (product) {
+                                const productDiv = $('<div class="product"></div>');
+                                productDiv.append('<h3>' + product.name + '</h3>');
+                                productDiv.append('<p>Price: $' + product.price.toFixed(2) + '</p>');
+                                productDiv.append('<p>Inventory: ' + product.inventory + '</p>');
+                                $("#productsContainer").append(productDiv);
+                            });
+                        },
+                    });
+                });
+            });
+        </script>
+
+    </body>
+</html>
+
+
+

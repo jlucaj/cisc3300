@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Programming Club Sign-up</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            form {
+                max-width: 300px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            input, button {
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            button {
+                background: goldenrod;
+                border: none;
+                cursor: pointer;
+            }
+
+            #message {
+                margin-top: 20px;
+                font-size: 18px;
+                font-weight: bold;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Web Programming Club Sign-up</h2>
+
+        <form id="signupForm">
+            <input type="text" name="student_name" placeholder="Student Name" required>
+            <input type="text" name="major" placeholder="Major" required>
+            <input type="text" name="grade" placeholder="Grade" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="message"></div>
+
+        <script>
+            $(function () {
+                $("#signupForm").submit(function (e) {
+                    e.preventDefault();
+                    $.post("index.php", $(this).serialize(), function (data) {
+                        $("#message").text(data.message).css("color", "green");
+                    }, "json");
+                });
+            });
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
