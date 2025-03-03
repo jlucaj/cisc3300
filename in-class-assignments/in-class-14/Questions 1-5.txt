@@ -1,0 +1,5 @@
+1. -> 
+2. visibility
+3. it inherits parents properties & methods
+4. polymorphism
+5. namespaces
