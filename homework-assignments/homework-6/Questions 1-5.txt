@@ -1,0 +1,9 @@
+1. Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their scope before execution, allowing them to be referenced before they are defined. However, only declarations are hoisted, not initializations. Closures occur when a function retains access to variables from its outer scope, even after that scope has finished executing. While closures can access outer variables, they cannot reach into inner child functions.
+
+2. PHP: Hypertext Preprocessor (PHP) is a server-side scripting language used for processing web requests, handling database operations, and generating dynamic content. Server-side languages execute on the server rather than the client, managing authentication, data storage, and communication between the front end and back end. 
+
+3. JavaScript supports both functional and procedural programming, with features like closures and higher-order functions. PHP is also versatile but is primarily procedural, though it supports class-based OOP. JavaScript uses prototype-based inheritance, whereas PHP follows traditional class-based OOP. Both languages have dynamically and weakly typed variables, meaning types are inferred rather than explicitly declared.
+
+4. PHP is widely used for web development and has extensive documentation and community support. While PHP use to have slower execution speeds, modern versions have improved performance. Compared to Python, PHP is often easier to deploy in web hosting environments, and unlike Node.js, it avoids issues like callback hell, though Node.js now mitigates this with async/await.
+
+5. echo is used to display strings and simple values, making it useful for outputting text in web pages. var_dump, on the other hand, provides detailed information about a variable, including its type and structure, making it a valuable tool for debugging complex data types like arrays and objects.
