@@ -1,0 +1,35 @@
+1. A class is a template for creating an object, defining their properties and methods. An object is a reference to dynamic data, it's an instance of a class. Object Oriented Programming is a style of programming based on the concept of objects. It consists of “four pillars” or encapsulation, abstraction, inheritance, and polymorphism. Encapsulation is bundling data within a class while restricting access to some details. Abstraction is hiding details and only showing what is necessary. Inheritance is allowing child classes to inherit properties from parent classes. Polymorphism is allowing objects to be treated as instances of their parent classes, allowing for overriding. 
+
+2. An abstract class is a class that is not meant to be instantiated, only extended by children classes. Abstract classes are used when a class provides some high level functionality but leaves out certain details to be implemented by derived classes. For instance, if I had a class that was used for general bonds I could use it for a child class for a special bond that requires extra details. Basically the general bond class serves as a template. 
+
+3. Superglobals are several predefined variables in PHP which are available in all scopes throughout a script. Here are some examples of the data they provide: 
+$GLOBALS - associative array containing references to all variables which are defined in the global scope of the script.
+$_GET - associative array of variables passed to the current script via the URL parameters. 
+$_POST - associative array of variables passed to the current script via the HTTP POST method. 
+
+4. Step 1: define a namespace in the class to be used. 
+Step 2a): type out the full namespace everytime we want to use that class
+Step 2b): import the class into the current namespace with the use keyword
+
+5. MVC is an architectural pattern that separates an app into three logical main components: model, view, and controller. Each architectural component is built to handle specific development aspects of an app. 
+Here is what each component does:
+Model: corresponds to all the data-related logic that the user works with, it can either represent the data being transferred between the View and Controller components or any other business logic-related data. It can add or retrieve data from the database. We create models using data to represent things. 
+View: used for all the UI logic of an app, it generates a UI for the user. It is created by the data which is collected by the model but it only interacts with the controller. 
+Controller: enables the interconnection between the views and the model so it acts as an intermediary. The controller does not need to handle data logic, it just tells the model what to do. It processes all the business logic and incoming requests, manipulates data using the model, and interacts with the view to render the final output. It also includes routing. 
+
+6. 
+a. getting all users 
+URI: /users
+HTTP: GET
+b. getting one users
+URI: /users/id
+HTTP: GET
+c. saving a user 
+URI: /users
+HTTP: POST
+d. editing a user
+URI: /users/id
+HTTP: PUT (if replacing), PATCH (if updating) 
+e. deleting a user
+URI: /users/id
+HTTP: DELETE
