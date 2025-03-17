@@ -1,0 +1,7 @@
+1. A website can tell a browser to store data about the user and their visit in a text file called a cookie. Each time the browser requests another page from that domain, the browser sends the data in the cookie back to the server. Sessions store information about a user and their preferences on the server as a text file in the tmp directory. Cookies are tied to one browser, and should not be used to store sensitive information. Sessions are more secure. 
+
+2. A relational database is a database built on the relational model of data, which has data presented in tabular form and provides relational operators such as equality to manipulate that data. Structured Query Language (SQL) is a query language used to store and process data in a relational database. You can use it to search, store, update, remove, and retrieve information. MySQL is an open-source software that utilizes SQL to manage relational databases. 
+
+3. Normalization in SQL is the process of organizing data to ensure data integrity. An example of normalization would be searching through a database and removing duplicate entries. Besides data quality, normalization helps with query performance as queries are quicker with smaller tables. 
+
+4. Primary keys are unique identifiers for each row of a table. Foreign keys link data from one table to another. 
