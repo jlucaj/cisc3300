@@ -1,0 +1,5 @@
+1. PDO
+2. DSN
+3. .env file 
+4. prepared statement 
+5. SQL injection
