@@ -1,0 +1,9 @@
+1. Relationships in SQL are the established associations between two or more tables. We use joins to request data from more than one table.
+
+2. We generally implement relationships using joins.
+
+3. PDOs are a built in class that comes packaged with PHP to make it easier for us to interact with databases. We set up a connection and then run queries through it, it represents and manages the connection to the database. A DSN is a data source name that is a string containing information about our connection the database. 
+
+4. Prepared statements are SQL statement templates with parameters created and sent to the database. They can be used and executed as many times as the user wants, like a function. Besides repeatability, prepared statements help prevent against malicious SQL injections. 
+
+5. An .env file is a file containing environment variables or variables whose value is set outside the program through a functionality built into the OS. It exists in our environment (OS) and set variables specific to that environment. 
