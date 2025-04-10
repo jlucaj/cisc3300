@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jozef's Soda Store</title>
+        <link rel="stylesheet" href="/app/Views/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Jozef's Soda Store</h1>
+        </header>
+        <div class="container">
+            <h2>Search for a Soda Type</h2>
+            <input type="text" id="searchFlavor" placeholder="e.g., Cola, Diet">
+            <button onclick="searchSoda()">Search</button>
+
+            <h2>All Soda Products</h2>
+            <div id="productList"></div>
+
+            <h2>Add New Soda</h2>
+            <input type="text" id="newName" placeholder="Name">
+            <input type="text" id="newFlavor" placeholder="Flavor">
+            <input type="number" id="newPrice" placeholder="Price">
+            <button onclick="createSoda()">Add Soda</button>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                loadSodas();
+            });
+
+            // Use the proper endpoint that matches your index.php routing conditions.
+            const url = '/sodas';
+
+            function loadSodas() {
+                fetch(`${url}?action=all`)
+                    .then(response => response.json())
+                    .then(displaySodas)
+                    .catch(error => console.error('Error:', error));
+            }
+
+            function searchSoda() {
+                let flavor = document.getElementById('searchFlavor').value;
+                fetch(`${url}?action=search&flavor=${encodeURIComponent(flavor)}`)
+                    .then(response => response.json())
+                    .then(displaySodas)
+                    .catch(error => console.error('Error:', error));
+            }
+
+            function createSoda() {
+                let name = document.getElementById('newName').value;
+                let flavor = document.getElementById('newFlavor').value;
+                let price = document.getElementById('newPrice').value;
+
+                fetch(`${url}?action=create`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, flavor, price })
+                })
+                    .then(response => response.json())
+                    .then(() => {
+                        loadSodas();
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+
+            function deleteSoda(id) {
+                fetch(`${url}?action=delete`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id })
+                })
+                    .then(response => response.json())
+                    .then(() => {
+                        loadSodas();
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+
+            function displaySodas(data) {
+                let container = document.getElementById('productList');
+                container.innerHTML = '';
+
+                if (data.length === 0) {
+                    container.innerHTML = '<p>No sodas found.</p>';
+                    return;
+                }
+
+                let table = '<table><tr><th>Name</th><th>Flavor</th><th>Price ($)</th></tr>';
+
+                data.forEach(soda => {
+                    table += `<tr>
+                                        <td>${soda.name}</td>
+                                        <td>${soda.flavor}</td>
+                                        <td>${soda.price}</td>
+                                        <td><button onclick="deleteSoda(${soda.id})">Delete</button></td>
+                                      </tr>`;
+                });
+
+                table += '</table>';
+                container.innerHTML = table;
+            }
+        </script>
+
+    </body>
+</html>
+
